@@ -6,8 +6,8 @@ Ferramentas de acesso não oficial ao SUAP
 
 ```sh
 
-  npm install suap-tools
-  yarn add suap-tools
+  npm install suap-web-api
+  yarn add suap-web-api
 
 
 ```
@@ -15,9 +15,9 @@ Ferramentas de acesso não oficial ao SUAP
 # Uso
 
 ```js
-import SUAP from "suap-tools";
+import SUAP from "suap-web-api";
 
-const SUAP = require("suap-tools");
+const SUAP = require("suap-web-api");
 ```
 
 # Métodos
@@ -71,7 +71,7 @@ const content = await SUAP.get("/acesso/login", { next: "/" });
 // -> Retorna o HTML da página /acesso/login?next=/
 ```
 
-## `string post( string path [, object params = {} ] )`
+## `string post( string path [, object data = {} ] )`
 
 `post()` realiza uma requisição do tipo POST ao SUAP e recebe o seu resultado como string.
 
